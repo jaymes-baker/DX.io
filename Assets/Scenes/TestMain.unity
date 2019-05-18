@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 12
+    serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,7 +62,6 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
-    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -77,16 +76,10 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVREnvironmentSampleCount: 500
-    m_PVREnvironmentReferencePointCount: 2048
-    m_PVRFilteringMode: 2
-    m_PVRDenoiserTypeDirect: 0
-    m_PVRDenoiserTypeIndirect: 0
-    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVREnvironmentMIS: 0
+    m_PVRFilteringMode: 2
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -95,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-    m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -147,14 +139,14 @@ RectTransform:
   m_GameObject: {fileID: 253013428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.3534375, z: 1}
   m_Children: []
   m_Father: {fileID: 1785441532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000045776}
+  m_AnchoredPosition: {x: 0, y: 0.000051283}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253013430
@@ -167,8 +159,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -276,10 +268,9 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -337,7 +328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &919832595
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -420,7 +411,7 @@ GameObject:
   - component: {fileID: 1130674692}
   - component: {fileID: 1130674693}
   m_Layer: 0
-  m_Name: Phone
+  m_Name: Shoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,8 +473,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130674688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.909, y: -0.917, z: 0}
-  m_LocalScale: {x: 1.6464185, y: 1.4270806, z: 1}
+  m_LocalPosition: {x: 2.62, y: -3.48, z: 0}
+  m_LocalScale: {x: 2.2365568, y: 2.0514283, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -498,8 +489,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   trigger: 32
   condition:
     luaConditions: []
@@ -509,24 +500,24 @@ MonoBehaviour:
     luaWizardIndex: -1
     lastEvaluationValue: 0
   setQuestState: 1
-  questName:
+  questName: 
   questState: 0
   setQuestEntryState: 0
   questEntryNumber: 1
   questEntryState: 0
-  luaCode:
-  sequence:
+  luaCode: 
+  sequence: 
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage:
+  alertMessage: 
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
   barkSource: 0
-  barkConversation:
-  barkText:
-  barkTextSequence:
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
   barker: {fileID: 0}
   barkTarget: {fileID: 0}
   barkOrder: 0
@@ -558,7 +549,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: PixelCrushers.GameObjectUnityEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
@@ -566,7 +557,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: fcc073db727826945b54920146dd146f, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!65 &1130674692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -590,8 +581,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81469a2df7f0d904bbdef6073a1bb9c8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251324192
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,8 +611,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -639,8 +630,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
@@ -714,8 +705,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 732b0926ba975d3498cbbe9f2327afaa, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   isDoorConditionMet: 0
 --- !u!114 &1440078933
 MonoBehaviour:
@@ -727,8 +718,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5f0f57ac9943d41977b58afd3fd995, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   objects:
   - {fileID: 1498912705}
   - {fileID: 1130674688}
@@ -763,8 +754,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d0839f751df99645a092feae6ee9682, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   lastSwipe: 0
   OnUserSwipe:
     m_PersistentCalls:
@@ -858,8 +849,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498912705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.69, y: 0.23, z: 0}
-  m_LocalScale: {x: 1.4052781, y: 1.38567, z: 1}
+  m_LocalPosition: {x: 0.08, y: 0.23, z: 0}
+  m_LocalScale: {x: 3.4088972, y: 2.77134, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -879,7 +870,7 @@ GameObject:
   - component: {fileID: 1513248231}
   - component: {fileID: 1513248233}
   m_Layer: 0
-  m_Name: Shoes
+  m_Name: Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -941,7 +932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513248226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.404, y: -3.098, z: 0}
+  m_LocalPosition: {x: -7.18, y: -1.9, z: 0}
   m_LocalScale: {x: 1.417, y: 1.38, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -957,8 +948,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54b9213ba5526134e88319235dc77a08, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   OnItemClicked:
     m_PersistentCalls:
       m_Calls:
@@ -970,7 +961,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -998,8 +989,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ea04483c8afdde42adfd2e754be7e49, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   InventoryObject: {fileID: 401914712}
 --- !u!114 &1513248233
 MonoBehaviour:
@@ -1011,8 +1002,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   trigger: 32
   condition:
     luaConditions: []
@@ -1022,24 +1013,24 @@ MonoBehaviour:
     luaWizardIndex: -1
     lastEvaluationValue: 0
   setQuestState: 1
-  questName:
+  questName: 
   questState: 0
   setQuestEntryState: 0
   questEntryNumber: 1
   questEntryState: 0
-  luaCode:
-  sequence:
+  luaCode: 
+  sequence: 
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage:
+  alertMessage: 
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
   barkSource: 0
-  barkConversation:
-  barkText:
-  barkTextSequence:
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
   barker: {fileID: 0}
   barkTarget: {fileID: 0}
   barkOrder: 0
@@ -1068,7 +1059,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: fcc073db727826945b54920146dd146f, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!1 &1776030169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,8 +1136,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776030169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.038, y: 0.006, z: 0}
-  m_LocalScale: {x: 1.3928399, y: 1.571, z: 1}
+  m_LocalPosition: {x: -2.22, y: -0.39, z: 0}
+  m_LocalScale: {x: 1.9673864, y: 2.0619376, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1161,8 +1152,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   trigger: 32
   condition:
     luaConditions: []
@@ -1172,24 +1163,24 @@ MonoBehaviour:
     luaWizardIndex: -1
     lastEvaluationValue: 0
   setQuestState: 1
-  questName:
+  questName: 
   questState: 0
   setQuestEntryState: 0
   questEntryNumber: 1
   questEntryState: 0
-  luaCode:
-  sequence:
+  luaCode: 
+  sequence: 
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage:
+  alertMessage: 
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
   barkSource: 0
-  barkConversation:
-  barkText:
-  barkTextSequence:
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
   barker: {fileID: 0}
   barkTarget: {fileID: 0}
   barkOrder: 0
@@ -1218,7 +1209,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: fcc073db727826945b54920146dd146f, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!65 &1776030173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1242,8 +1233,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81469a2df7f0d904bbdef6073a1bb9c8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1785441532 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 22425850, guid: 58ac37417e60e534f91138088a3e6f70,
@@ -1307,12 +1298,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: initialDatabase
-      value:
+      value: 
       objectReference: {fileID: 11400000, guid: fcc073db727826945b54920146dd146f,
         type: 2}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.dialogueUI
-      value:
+      value: 
       objectReference: {fileID: 101180, guid: 5ba51781a19f8a843abeb2d304d0d26e, type: 3}
     - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: onUseTouch.m_PersistentCalls.m_Calls.Array.size
@@ -1332,7 +1323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: onUseTouch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1130674691}
     - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: onUseTouch.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1344,7 +1335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: onUseTouch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value:
+      value: 
       objectReference: {fileID: 919832596}
     - target: {fileID: 22325660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_RenderMode
@@ -1352,7 +1343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22325660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 22325660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_PixelPerfect
@@ -1389,8 +1380,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 006682bd4d83dfd42b8b4ed3f70cb283, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   lastSwipeDirection: 4
   hasUserSwiped: 0
 --- !u!114 &2127618561
@@ -1403,8 +1394,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   trigger: 32
   condition:
     luaConditions: []
@@ -1414,24 +1405,24 @@ MonoBehaviour:
     luaWizardIndex: -1
     lastEvaluationValue: 0
   setQuestState: 1
-  questName:
+  questName: 
   questState: 0
   setQuestEntryState: 0
   questEntryNumber: 1
   questEntryState: 0
-  luaCode:
-  sequence:
+  luaCode: 
+  sequence: 
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage:
+  alertMessage: 
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
   barkSource: 0
-  barkConversation:
-  barkText:
-  barkTextSequence:
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
   barker: {fileID: 0}
   barkTarget: {fileID: 0}
   barkOrder: 0
@@ -1463,7 +1454,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2127618560}
@@ -1474,7 +1465,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: PixelCrushers.GameObjectUnityEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
@@ -1482,7 +1473,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: fcc073db727826945b54920146dd146f, type: 2}
+  selectedDatabase: {fileID: 0}
 --- !u!212 &2127618562
 SpriteRenderer:
   m_ObjectHideFlags: 0
